@@ -21,14 +21,15 @@
 
 
 *Suggested citation:*
-   
+
     J. Ruf and W. Wang (2021), Information leakage in backtesting.
 
 *Supplementary reading:*
 
-    J. Ruf and W. Wang (2020b), Hedging with linear regressions and neural networks, SSRN 3580132, 2020. Accepted by the Journal of Business and Economic Statistics subject to minor corrections. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3580132
+J. Ruf and W. Wang (2020b), Hedging with linear regressions and neural networks, SSRN 3580132, 2020. Accepted by the Journal of Business and Economic Statistics subject to minor corrections. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3580132
+    
 
-    J. Ruf and W. Wang (2020a), Neural networks for option pricing and hedging: A literature review, Journal of Computational Finance, volume 24, number 1, pages 1-45. Download at  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3486363
+J. Ruf and W. Wang (2020a), Neural networks for option pricing and hedging: A literature review, Journal of Computational Finance, volume 24, number 1, pages 1-45. Download at  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3486363
 
 ## Introduction
 
