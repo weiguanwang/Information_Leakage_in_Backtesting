@@ -9,22 +9,21 @@
 
 ## Contact and citation
 
-*Authors and affiliations:*
+**Authors and affiliations:**
 
-   Weiguan Wang [weiguanwang@outlook.com](), https://weiguanwang.github.io/
+Weiguan Wang [weiguanwang@outlook.com](), https://weiguanwang.github.io/
 
-   Prof. Johannes Ruf [j.ruf@lse.ac.uk](), http://www.maths.lse.ac.uk/Personal/jruf/
+Prof. Johannes Ruf [j.ruf@lse.ac.uk](), http://www.maths.lse.ac.uk/Personal/jruf/
 
-   Department of Mathematics, London School of Economics and Political Science, London, United Kingdom
+Department of Mathematics, London School of Economics and Political Science, London, United Kingdom
 
-   30 January 2021
+30 January 2021
 
+**Suggested citation:**
 
-*Suggested citation:*
+J. Ruf and W. Wang (2021), Information leakage in backtesting.
 
-    J. Ruf and W. Wang (2021), Information leakage in backtesting.
-
-*Supplementary reading:*
+**Supplementary reading:**
 
 J. Ruf and W. Wang (2020b), Hedging with linear regressions and neural networks, SSRN 3580132, 2020. Accepted by the Journal of Business and Economic Statistics subject to minor corrections. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3580132
     
