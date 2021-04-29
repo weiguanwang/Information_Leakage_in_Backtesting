@@ -11,13 +11,11 @@
 
 **Authors and affiliations:**
 
-Weiguan Wang [weiguanwang@outlook.com](), https://weiguanwang.github.io/
+Prof. Johannes Ruf [j.ruf@lse.ac.uk](), http://www.maths.lse.ac.uk/Personal/jruf/, London School of Economics and Political Science
 
-Prof. Johannes Ruf [j.ruf@lse.ac.uk](), http://www.maths.lse.ac.uk/Personal/jruf/
+Weiguan Wang [weiguanwang@outlook.com](), https://weiguanwang.github.io/, Shanghai University
 
-Department of Mathematics, London School of Economics and Political Science, London, United Kingdom
-
-30 January 2021
+29 April 2021
 
 **Suggested citation:**
 
