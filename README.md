@@ -11,7 +11,7 @@
 
 **Authors and affiliations:**
 
-Prof. Johannes Ruf [j.ruf@lse.ac.uk](), http://www.maths.lse.ac.uk/Personal/jruf/, London School of Economics and Political Science
+Johannes Ruf [j.ruf@lse.ac.uk](), http://www.maths.lse.ac.uk/Personal/jruf/, London School of Economics and Political Science
 
 Weiguan Wang [weiguanwang@outlook.com](), https://weiguanwang.github.io/, Shanghai University
 
@@ -19,7 +19,7 @@ Weiguan Wang [weiguanwang@outlook.com](), https://weiguanwang.github.io/, Shangh
 
 **Suggested citation:**
 
-J. Ruf and W. Wang (2021), Information leakage in backtesting.
+J. Ruf and W. Wang (2021), Information leakage in backtesting. SSRN 3836631. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836631
 
 **Supplementary reading:**
 
