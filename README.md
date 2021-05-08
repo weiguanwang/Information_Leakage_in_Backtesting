@@ -23,10 +23,10 @@ J. Ruf and W. Wang (2021), Information leakage in backtesting. SSRN 3836631. Dow
 
 **Supplementary reading:**
 
-J. Ruf and W. Wang (2020b), Hedging with linear regressions and neural networks, SSRN 3580132, 2020. Accepted by the Journal of Business and Economic Statistics subject to minor corrections. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3580132
+J. Ruf and W. Wang (2020b), Hedging with linear regressions and neural networks, SSRN 3580132, 2020. Accepted by the *Journal of Business and Economic Statistics* subject to minor corrections. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3580132
     
 
-J. Ruf and W. Wang (2020a), Neural networks for option pricing and hedging: A literature review, Journal of Computational Finance, volume 24, number 1, pages 1-45. Download at  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3486363
+J. Ruf and W. Wang (2020a), Neural networks for option pricing and hedging: A literature review, *Journal of Computational Finance*, volume 24, number 1, pages 1-45. Download at  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3486363
 
 ## Introduction
 
@@ -87,6 +87,13 @@ For the historical dataset, there is an extra folder `RawData` to store data giv
 
   4. `interest_rate.csv` contains the interest rate derived from zero-coupon bond for maturity larger than 7 days, downloaded from OptionMetrics.
 
+## Known issues
+
+1. We use business day convention when counting and offsetting days, where business days consist of all weekdays. However, the stock/option trading days are a subset of  business days due to the existence of certain public holidays. For instance, Martin Luther King Day is not a trading day on the Chicago Board Option Exchange, where the S\&P 500 options are traded.  The current code does not take this difference into account, and hence unnecessarily removes samples when it cannot obtain the stock/option price at the end of a hedging period. This problem has no significant impact for the results and conclusions presented here as it only reduces the sample size, and only by a miniscule amount.
+
+2. We use continuous compounding in this code for computing the single-period return on the risk-free asset. However, Equation (1) in our paper uses simple compounding. We admits this inconsistency, but it will only change the results by a miniscule amount. 
+
+We thank Yiren Wu and Max Yang for reporting these two issues to us.
 
 ## Package information
 
