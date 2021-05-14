@@ -19,7 +19,7 @@ Weiguan Wang [weiguanwang@outlook.com](), https://weiguanwang.github.io/, Shangh
 
 **Suggested citation:**
 
-J. Ruf and W. Wang (2021b), Information leakage in backtesting. SSRN 3836631. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836631
+J. Ruf and W. Wang (2021b), Information Leakage in Backtesting. SSRN 3836631. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836631
 
 **Supplementary reading:**
 
