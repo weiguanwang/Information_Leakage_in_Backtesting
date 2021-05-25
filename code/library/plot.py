@@ -5,10 +5,9 @@ from pandas.tseries.offsets import BDay
 from .bs import simulate_geometric_bm
 
 
-#plots in-sample path and 10 out-of-sample paths for simulation data
+#plots in-sample path and multiple out-of-sample paths for simulation data
 def plot_stock_test_prices(
         path,
-        underlying_model,
         underlying_params,
         n_ofTestDays,
         date_break,
@@ -19,15 +18,13 @@ def plot_stock_test_prices(
     underlying_params['start_date'] = underlying_params['end_date'] + BDay()
     underlying_params['end_date'] = underlying_params['end_date'] + n_ofTestDays
 
-    if underlying_model == 'BS':
-        for i in range(10):
-            simulate_geometric_bm(underlying_params).plot(
-                ax=ax_sim,
-                legend=False,
-                alpha=0.5
-            )
-
-        
+    
+    for i in range(10):
+        simulate_geometric_bm(underlying_params).plot(
+            ax=ax_sim,
+            legend=False,
+            alpha=0.5
+        )  
 
     ax_sim.annotate(
         'Training',

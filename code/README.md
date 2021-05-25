@@ -36,7 +36,7 @@ This code repository comes with two folders: `code` and `data`. The ``data`` fol
 
 To use the code for the simulation data, one can run the `run.sh`  script in a Linux-like shell from the directory `code`.  The resulting notebooks in HTML format, Figure 2 of the paper, and all intermediate CSV files will appear in the `results/BlackScholes` folder. Users can also execute notebooks one-by-one without using the shell script.
 
-The real-world data experiment requires  raw data from OptionMetrics. We are not able to provide this raw data due to its commercial nature.  They can be obtained from Wharton Research Data Services. Within the OptionMetrics subscription, one can then download the relevant data. To query option prices, one needs to access "Ivy DB US - Option Prices", choose the Date Range "2010 to 2019", Company Code "SECID 108105", Option Type "Both", Exercise Style "European", Security Type "Index", Query Variables "All", Output Fromat "comma-delimited text (*.csv)", Date Format "YYMMDDs10. (e.g. 1984/07/25)", and then click `Submit Query`. To obtain the files for the S&P 500 price, one instead goes to "Ivy DB US - Security - Security Prices" and chooses the same Date Range, Company Code, Query Variables, and Query Output. To obtain interest rates, one goes to "Ivy DB US - Market - Zero Coupon Yield Curve" and choose the same Date Range, Query Variables, and Query Output. These data then need to be put into the `data/OptionMetrics/RawData` folder before running the shell script; see [Data folder structure](#Data-folder-structure) for managing file names.
+The real-world data experiment requires  raw data from OptionMetrics. We are not able to provide this raw data due to its commercial nature.  They can be obtained from Wharton Research Data Services. Within the OptionMetrics subscription, one can then download the relevant data. To query option prices, one needs to access "Ivy DB US - Option Prices", choose the Date Range "2010 to 2019", Company Code "SECID 108105", Option Type "Both", Exercise Style "European", Security Type "Index", Query Variables "All", Output Fromat "comma-delimited text (*.csv)", Date Format "YYMMDDs10. (e.g. 1984/07/25)", and then click `Submit Query`. To obtain the files for the S&P 500 price, one instead goes to "Ivy DB US - Security - Security Prices" and chooses the same Date Range, Company Code, Query Variables, and Query Output. To obtain interest rates, one goes to “"Ivy DB US - Market - Zero Coupon Yield Curve" and choose the same Date Range, Query Variables, and Query Output. These data then need to be put into the `data/OptionMetrics/RawData` folder before running the shell script; see [Data folder structure](#Data-folder-structure) for managing file names.
 
 After obtaining the OptionMetrics data, the file`run_OptionMetrics.sh` is used for the S&P 500 data. The resulting notebooks in HTML format, Figure 3 in the paper, and all intermediate CSV files will appear in the `results/OptionMetrics` folder.
 
@@ -47,7 +47,7 @@ In the following, we explain in more detail the organisation of the code and dat
 The code consists of three subfolders. They are `libaray`, `Simulation`, and `OptionMetrics`. The `library` folder contains auxiliary tools in the following files:
 
 1. `bs.py`:  tools to simulate the Black-Scholes dataset.
-2. `cleaner_aux.py`:  tools to clean raw data.
+2. `cleaner_aux.py:  tools to clean raw data.
 3. `common.py`:  tools to calculate and inspect the hedging error.
 4. `loader_aux.py`:  tools to load clean data (before training the ANNs or the linear regressions).
 5. `network.py`: tools to implement HedgeNet and auxiliary tools.
@@ -65,7 +65,7 @@ In each of the other two folders, there are two Python files that are used by ot
 
 The notebooks in both folders have a similar structure:
 
-1. In the ``Simulation`` folder, the first notebook implements the data simulation. In the `OptionMetrics` folder, the first notebook implements the cleaning of the raw dataset. 
+1. In the ``Simulation`` folder, the first notebook implements the data simulation. In the ``OptionMetrics` folder, the first notebook implements the cleaning of the raw dataset. 
 2. `2_Regression_Generate.ipynb` implements the linear regressions on sensitivities and stores the PNL (MSHE) files.
 3. `3_Network.ipynb` implements the training of the ANNs and stores the PNL files (MSHE of ANNs).
 4. `4_Permute_VIX_Analysis.ipynb` implements the analysis of permutation and fake VIX experiments. The implementation of the experiment is done in notebooks 2 and 4, by giving the corresponding setup flags. 

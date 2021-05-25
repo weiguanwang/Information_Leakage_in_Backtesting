@@ -140,21 +140,3 @@ def run_store_lin(
             'df_fit_std': res_dict['df_fit_std']}
 
 
-def fit_leverage(df):
-    """
-    Fit the leverage between stock return and volatility change.
-    """
-
-    """ Because implvol1 may still be NA in df, we need to remove """
-    bl = df['implvol1'].notna()
-  
-    df = df.loc[bl]  
-    preds = (df['S1_n'] - df['S0_n']).values.reshape(-1, 1)
-    y = df['implvol1'] - df['implvol0']
-    lin = LinearRegression(fit_intercept=False).fit(
-        preds,
-        y
-    )
-    var = (lin.coef_ * df['vega_n'] / df['delta_bs']).mean()
-
-    return var

@@ -36,34 +36,6 @@ def in_the_money_only(df, ori_size):
     return df
 
 
-# Removing columns from dataframe that have to do with specific hedging period (given by single-key)
-# Also renames; e.g. future normalized underlying price now denoted by S1_n
-# used when loading the data
-def remove_cols_rename(df, whole_dict, single_key, future_volume=None):
-    remove_freq = whole_dict.copy()
-    remove_freq.pop(single_key)
-
-    for key, value in remove_freq.items():
-        tag = value[1]
-        remove_cols = [x for x in df.columns if tag in x]
-        for col in remove_cols:
-            del df[col]
-
-    tmp = {
-        f'S{whole_dict[single_key][1]}': 'S1',
-        f'V{whole_dict[single_key][1]}': 'V1',
-        f'V{whole_dict[single_key][1]}_atm': 'V1_atm',
-        f'implvol{whole_dict[single_key][1]}': 'implvol1',
-        f'S{whole_dict[single_key][1]}_n': 'S1_n',
-        f'V{whole_dict[single_key][1]}_n': 'V1_n',
-        f'V{whole_dict[single_key][1]}_atm_n': 'V1_atm_n'
-    }
-
-    if future_volume:
-        tmp[f'volume{whole_dict[single_key][1]}'] = 'volume1'
-    df.rename(columns=tmp, inplace=True)
-
-
 
 def make_features(df):
     # Make sure this function is called after copying calls for puts.
@@ -95,7 +67,7 @@ def tag_data(
     if isinstance(offset, pd.Timedelta):
         if offset <= pd.Timedelta('2 hours'):
             t_end = end_date
-    else:
+    else:  # if business day offset
         t_end = end_date - offset
     bl = (df['date'] >= start_date) & (df['date'] <= t_end)
     df.loc[bl, f'period{period}'] = tag

@@ -9,7 +9,3 @@ jupyter nbconvert --ExecutePreprocessor.allow_errors=True --ExecutePreprocessor.
 jupyter nbconvert --ExecutePreprocessor.allow_errors=True --ExecutePreprocessor.timeout=-1 --output-dir=../results/BlackScholes/ --to='html' --execute Simulation/3_Network.ipynb 
 
 jupyter nbconvert --ExecutePreprocessor.allow_errors=True --ExecutePreprocessor.timeout=-1 --output-dir=../results/BlackScholes/ --to='html' --execute Simulation/4_Permute_VIX_Analysis.ipynb 
-
-# Add multiple commands for each notebook to run.
-
-# Save figures to separate directories for easy locating.
