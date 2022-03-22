@@ -2,8 +2,9 @@
 - [README](#readme)
   - [Contact and citation](#contact-and-citation)
   - [Introduction](#introduction)
-  - [Code structure](#code-structure)
-  - [Data folder structure](#data-folder-structure)
+  - [Code structure for simulated and OptionMetrics data](#code-structure-for-simulated-and-optionmetrics-data)
+  - [Data folder structure for simulated and OptionMetrics data](#data-folder-structure-for-simulated-and-optionmetrics-data)
+  - [Known issues](#known-issues)
   - [Package information](#package-information)
 
 
@@ -23,8 +24,6 @@ J. Ruf and W. Wang (2022), Information Leakage in Backtesting. SSRN 3836631. Dow
 
 **Supplementary reading:**
 
-H. Ritchie, E. Mathieu, L. Rodes-Guirao, C. Appel, C. Giattino, E. Ortiz-Ospina, J. Hasell, B. Macdonald, D. Beltekian, and M. Roser (2020), Coronavirus pandemi (COVID-19). Our World in Data. https://ourworldindata.org/coronavirus.
-
 J. Ruf and W. Wang (2021), Hedging with linear regressions and neural networks, SSRN 3580132, 2021. Forthcoming in the *Journal of Business & Economic Statistics*. Available at https://www.tandfonline.com/doi/pdf/10.1080/07350015.2021.1931241
     
 
@@ -32,7 +31,7 @@ J. Ruf and W. Wang (2020), Neural networks for option pricing and hedging: A lit
 
 ## Introduction
 
-This code reproduces the results in Ruf and Wang (2022) "Information leakage in backtesting". It covers three datasets, simulated data under the Black-Scholes model, real-world S&P 500 data obtained from OptionMetrics, and COVID-19 data obtained from *Our World In Data* (https://github.com/owid/covid-19-data/tree/master/public/data, see Ritchie et al (2020)).
+This code reproduces the results in Ruf and Wang (2022) "Information leakage in backtesting". It covers two datasets, simulated data under the Black-Scholes model, and real-world S&P 500 data obtained from OptionMetrics。
 
 This code repository comes with two folders: `code` and `data`. The ``data`` folder contains the trained artificial neural networks (ANNs). They can be used to reproduce the paper's results. The code also allows to train the ANNs again. In order to do so, change the `TRAIN_BY_YOURSELF` parameter in the `setup.py` to `True`. 
 
@@ -42,9 +41,7 @@ The real-world data experiment requires  raw data from OptionMetrics. We are not
 
 After obtaining the OptionMetrics data, the file`run_OptionMetrics.sh` is used for the S&P 500 data. The resulting notebooks in HTML format, Figure 3 in the paper, and all intermediate CSV files will appear in the `results/OptionMetrics` folder.
 
-The COVID data are provided in `data/Covid/owid-covid-data.xlsx`. Running the shell script `run_covid.sh` will produce the notebooks in HTML, and Figure 4 in `results/Covid` folder. We also provide the trained ANNs checkpoints in `data/Covid/checkpoints`.
-
-In the following, we explain in more detail the organisation of the code and data folders for the Black-Scholes simulated data and OptionMetrics data only. The Covid code and data folders do not need further explanation.
+In the following, we explain in more detail the organisation of the code and data folders for the Black-Scholes simulated data and OptionMetrics data only. 
 
 ## Code structure for simulated and OptionMetrics data
 
