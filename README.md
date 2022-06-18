@@ -16,11 +16,13 @@ Johannes Ruf [j.ruf@lse.ac.uk](), http://www.maths.lse.ac.uk/Personal/jruf/, Lon
 
 Weiguan Wang [weiguanwang@shu.edu.cn](), https://weiguanwang.github.io/, Shanghai University
 
-22 March 2022
+18 June 2022
 
 **Suggested citation:**
 
 J. Ruf and W. Wang (2022), Information Leakage in Backtesting. SSRN 3836631. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836631
+
+A short version of this paper is available under the title  ''Spurious Model Selection''.
 
 **Supplementary reading:**
 
