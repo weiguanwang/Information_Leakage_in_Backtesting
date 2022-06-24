@@ -16,21 +16,52 @@ Johannes Ruf [j.ruf@lse.ac.uk](), http://www.maths.lse.ac.uk/Personal/jruf/, Lon
 
 Weiguan Wang [weiguanwang@shu.edu.cn](), https://weiguanwang.github.io/, Shanghai University
 
-18 June 2022
+24 June 2022
 
 **Suggested citation:**
 
 W. Wang and J. Ruf (2022), Information Leakage in Backtesting. SSRN 3836631. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836631
 
-A short version of this paper is available under the title  ''Spurious Model Selection''.
+A short version of this paper is available under the title  ''A Note on Spurious Model Selection''.
 
+```
+@article{
+  RW.2022.spurious,
+  title={A Note on Spurious Model Selection},
+  author={Wang, Weiguan and Ruf, Johannes},
+  journal={Quantitative Finance},
+  year={2022},
+  note={Forthcoming}
+}
+```
 **Supplementary reading:**
 
 J. Ruf and W. Wang (2021), Hedging with linear regressions and neural networks, SSRN 3580132, 2021. Forthcoming in the *Journal of Business & Economic Statistics*. Available at https://www.tandfonline.com/doi/pdf/10.1080/07350015.2021.1931241
-    
+
+```
+@article{RW.2022.hedgenet,
+  title={Hedging with Linear Regressions and Neural Networks},
+	author={Ruf, Johannes and Wang, Weiguan},
+	journal={Journal of Business \& Economic Statistics},
+	volume={SSRN 3580132},
+	note={Forthcoming},
+	year={2022}}
+```
 
 J. Ruf and W. Wang (2020), Neural networks for option pricing and hedging: A literature review, *Journal of Computational Finance*, volume 24, number 1, pages 1-45. Available at  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3486363
 
+```
+@article{
+  RW.2020.LR,
+  Author = {Ruf, Johannes and Wang, Weiguan},
+  Journal = {Journal of Computational Finance},
+  volume = {24},
+  number = {1},
+  pages = {1--46},
+  Title = {Neural networks for option pricing and hedging: {a} literature review},
+  Year = {2020}
+}
+```
 ## Introduction
 
 This code reproduces the results in Ruf and Wang (2022) "Information leakage in backtesting". It covers two datasets, simulated data under the Black-Scholes model, and real-world S&P 500 data obtained from OptionMetrics。
