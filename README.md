@@ -22,7 +22,7 @@ Weiguan Wang [weiguanwang@shu.edu.cn](), https://weiguanwang.github.io/, Shangha
 
 W. Wang and J. Ruf (2022), Information Leakage in Backtesting. SSRN 3836631. Download at https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836631
 
-A short version of this paper is available under the title  ''A Note on Spurious Model Selection''.
+A shorter version of this paper is available under the title  ''A Note on Spurious Model Selection'', forthcoming in *Quantitative Finance*.
 
 ```
 @article{
